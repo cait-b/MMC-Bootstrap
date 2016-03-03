@@ -1,0 +1,21 @@
+/* Navbar */
+.nav {
+    margin-top: 50px;
+}
+.nb {
+    width: 100%;
+    background: #b0a096;
+    background-image: url("../img/flowers2.png");
+    border-bottom: 5px solid #846048;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+
+/* Body */
+body {
+    background-color: #f0efee;
+    color:#846048 ;
+}
