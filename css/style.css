@@ -1,21 +1,49 @@
 /* Navbar */
-.nav {
-    margin-top: 50px;
-}
-.nb {
-    width: 100%;
-    background: #b0a096;
-    background-image: url("../img/flowers2.png");
-    border-bottom: 5px solid #846048;
-}
 
 .logo {
-    margin-top: 50px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4em;
+    color: white;
+    margin: 5px;
 }
 
-
 /* Body */
+
 body {
     background-color: #f0efee;
-    color:#846048 ;
+    color:#846048;
+    font-family:'Open Sans', sans-serif;
+}
+
+/* Sticky footer */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footericon {
+	max-height: 20px;
+	margin-left:10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #514f4e;
+    color: #b0afab;
+    font-weight:700;
+    font-size:.75em;
+	text-align:center;
+}
+
+.footer p {
+    margin-top: 20px;
 }
