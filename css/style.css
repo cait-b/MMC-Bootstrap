@@ -19,6 +19,44 @@ body p {
     margin-top: 20px;
 }
 
+.video {
+	margin-left:40%;
+    margin-top: 70px;
+	}
+
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/* Carousel */
+
+.item {
+    align-content: center;
+}
+
+.item img {
+    max-height: 500px;
+}
+
+/* ---- Gallery ---- */
+
+#gallery a {
+	text-decoration: none;
+}
+
+#gallery li {
+	display: inline;
+}
+
+#gallery img {
+	width: 10%;
+    margin-top: 60px;
+    margin-left: 5%;
+}
+
+
 /* Sticky footer */
 
 html {
@@ -58,7 +96,7 @@ body {
 
 @media (max-width: 383px) {
     .logo {
-        font-size: 1.3em;
+        font-size: 1em;
         margin: 0;
     }
 }
