@@ -5,6 +5,14 @@
     font-size: 2em;
     color: white;
     margin: 5px;
+	text-shadow: 2px 2px 10px #836f63;
+}
+
+.navbar-default {
+	background-color: #c4b8b1;
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 2px 2px 10px #836f63;
 }
 
 /* Body */
@@ -96,7 +104,14 @@ body {
 
 @media (max-width: 383px) {
     .logo {
-        font-size: 1em;
+        font-size: .6em;
+        margin: 0;
+    }
+}
+
+@media (min-width: 384) & (max-width: 609px) {
+    .logo {
+        font-size: 1.5em;
         margin: 0;
     }
 }
