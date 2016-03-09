@@ -99,8 +99,9 @@ body {
 }
 
 
+/*
 
-/* Media Query */
+ Media Query 
 
 @media (max-width: 383px) {
     .logo {
@@ -109,9 +110,9 @@ body {
     }
 }
 
-@media (min-width: 384) & (max-width: 609px) {
+@media (min-width: 384) and (max-width: 609px) {
     .logo {
         font-size: 1.5em;
         margin: 0;
     }
-}
+}*/
