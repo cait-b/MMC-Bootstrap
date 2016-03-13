@@ -2,12 +2,8 @@ $(document).ready(function() {
 
 
  $('button').click(function () {
-    // highlight the button
-    // not AJAX, just cool looking
     $("button").removeClass("selected");
     $(this).addClass("selected");
-
-    // the AJAX part
     var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     var animal = $(this).text();
     var flickrOptions = {
@@ -20,12 +16,12 @@ $(document).ready(function() {
         photoHTML += '<li>';
         photoHTML += '<a href="' + photo.link + '" class="image">';
         photoHTML += '<img src="' + photo.media.m + '"></a></li>';
-      }); // end each
+      });
       photoHTML += '</ul>';
       $('#photos').html(photoHTML);
     }
     $.getJSON(flickerAPI, flickrOptions, displayPhotos);
 
-  }); // end click
+  });
 
-}); // end ready
+}); 
