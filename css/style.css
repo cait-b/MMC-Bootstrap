@@ -72,7 +72,7 @@ body p {
 
 .btn {
 	box-shadow: -3px 7px 9px -5px #b0a096;
-    border: 1px solid #846048;
+  border: 1px solid #846048;
 	background-color:#b0a096;
 	border-radius:20%;
 	display:inline-block;
@@ -80,10 +80,10 @@ body p {
 	color:#ffffff;
 	font-size:1.5em;
 	height: 2em;
-    width: 2.2em;
+  width: 2.2em;
 	text-decoration:none;
 	text-shadow:-4px 4px 5px #846048;
-    margin: .1em;
+  margin: .1em;
 }
 .btn:hover {
 	background-color:#846048;
@@ -94,7 +94,14 @@ body p {
     color:#9f8375;
 }
 
+/* EBB */
 
+.ebb ul li {
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	margin: 2px;
+}
 
 /* Sticky footer */
 
@@ -103,7 +110,8 @@ html {
     min-height: 100%;
 }
 body {
-    /* Margin bottom by footer height */
+
+/* Margin bottom by footer height */
     margin-bottom: 60px;
 }
 

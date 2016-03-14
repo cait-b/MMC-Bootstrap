@@ -1,14 +1,11 @@
 $(document).ready(function() {
-
-
  $('button').click(function () {
-    $("button").removeClass("selected");
-    $(this).addClass("selected");
     var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-    var animal = $(this).text();
+    var bunnies = $(this).text();
     var flickrOptions = {
-      tags: animal,
-      format: "json"
+      tags: bunnies,
+      format: "json",
+			safe_search: 1
     };
     function displayPhotos(data) {
       var photoHTML = '<ul>';
