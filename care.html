@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="alphabet" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +13,12 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
     
-  <body>
+  <body ng-controller="AlphabetController as letter">
 
 
     <!-- Navigation -->
@@ -84,16 +86,144 @@
 				</a>
 			</li>
 	</div>
-
-	<div>
-		<div class="row"> 
-			<div class="col-sm-6 col-centered">
-			<script src="js/atoz.js"></script>
-				<div class="btninfo"></div>
-			</div>
-		</div>
+<div class="container">
+<section ng-init="tab = 1">
+		<ul class="nav nav-pills">
+	<li ng-class="{ active:tab === 1 }"> <a href ng-click="tab = 1">A</a></li>
+  <li ng-class="{ active:tab === 2 }"> <a href ng-click="tab = 2">B</a></li>
+  <li ng-class="{ active:tab === 3 }"> <a href ng-click="tab = 3">C</a></li>
+	<li ng-class="{ active:tab === 4 }"> <a href ng-click="tab = 4">D</a></li>
+	<li ng-class="{ active:tab === 5 }"> <a href ng-click="tab = 5">E</a></li>
+	<li ng-class="{ active:tab === 6 }"> <a href ng-click="tab = 6">F</a></li>
+	<li ng-class="{ active:tab === 7 }"> <a href ng-click="tab = 7">G</a></li>
+	<li ng-class="{ active:tab === 8 }"> <a href ng-click="tab = 8">H</a></li>
+	<li ng-class="{ active:tab === 9 }"> <a href ng-click="tab = 9">I</a></li>
+	<li ng-class="{ active:tab === 10 }"> <a href ng-click="tab = 10">J</a></li>
+	<li ng-class="{ active:tab === 11 }"> <a href ng-click="tab = 11">K</a></li>
+	<li ng-class="{ active:tab === 12 }"> <a href ng-click="tab = 12">L</a></li>
+	<li ng-class="{ active:tab === 13 }"> <a href ng-click="tab = 13">M</a></li>
+	<li ng-class="{ active:tab === 14 }"> <a href ng-click="tab = 14">N</a></li>
+	<li ng-class="{ active:tab === 15 }"> <a href ng-click="tab = 15">O</a></li>
+	<li ng-class="{ active:tab === 16 }"> <a href ng-click="tab = 16">P</a></li>
+	<li ng-class="{ active:tab === 17 }"> <a href ng-click="tab = 17">Q</a></li>
+	<li ng-class="{ active:tab === 18 }"> <a href ng-click="tab = 18">R</a></li>
+	<li ng-class="{ active:tab === 19 }"> <a href ng-click="tab = 19">S</a></li>
+	<li ng-class="{ active:tab === 20 }"> <a href ng-click="tab = 20">T</a></li>
+	<li ng-class="{ active:tab === 21 }"> <a href ng-click="tab = 21">U</a></li>
+	<li ng-class="{ active:tab === 22 }"> <a href ng-click="tab = 22">V</a></li>
+	<li ng-class="{ active:tab === 23 }"> <a href ng-click="tab = 23">W</a></li>
+	<li ng-class="{ active:tab === 24 }"> <a href ng-click="tab = 24">X</a></li>
+	<li ng-class="{ active:tab === 25 }"> <a href ng-click="tab = 25">Y</a></li>
+	<li ng-class="{ active:tab === 26 }"> <a href ng-click="tab = 26">Z</a></li>
+	</ul>
+	{{tab}}
+	<div class="panel" ng-show="tab === 1">
+		<h4>{{letter.btn[0].heading}}</h4>
+		<p>{{letter.btn[0].definition}}</p>
 	</div>
+	<div class="panel" ng-show="tab === 2">
+		<h4>{{letter.btn[1].heading}}</h4>
+		<p>{{letter.btn[1].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 3">
+		<h4>{{letter.btn[2].heading}}</h4>
+		<p>{{letter.btn[2].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 4">
+		<h4>{{letter.btn[3].heading}}</h4>
+		<p>{{letter.btn[3].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 5">
+		<h4>{{letter.btn[4].heading}}</h4>
+		<p>{{letter.btn[4].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 6">
+		<h4>{{letter.btn[5].heading}}</h4>
+		<p>{{letter.btn[5].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 7">
+		<h4>{{letter.btn[6].heading}}</h4>
+		<p>{{letter.btn[6].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 8">
+		<h4>{{letter.btn[7].heading}}</h4>
+		<p>{{letter.btn[7].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 9">
+		<h4>{{letter.btn[8].heading}}</h4>
+		<p>{{letter.btn[8].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 10">
+		<h4>{{letter.btn[9].heading}}</h4>
+		<p>{{letter.btn[9].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 11">
+		<h4>{{letter.btn[10].heading}}</h4>
+		<p>{{letter.btn[10].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 12">
+		<h4>{{letter.btn[11].heading}}</h4>
+		<p>{{letter.btn[11].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 13">
+		<h4>{{letter.btn[12].heading}}</h4>
+		<p>{{letter.btn[12].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 14">
+		<h4>{{letter.btn[13].heading}}</h4>
+		<p>{{letter.btn[13].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 15">
+		<h4>{{letter.btn[14].heading}}</h4>
+		<p>{{letter.btn[14].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 16">
+		<h4>{{letter.btn[15].heading}}</h4>
+		<p>{{letter.btn[15].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 17">
+		<h4>{{letter.btn[16].heading}}</h4>
+		<p>{{letter.btn[16].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 18">
+		<h4>{{letter.btn[17].heading}}</h4>
+		<p>{{letter.btn[17].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 19">
+		<h4>{{letter.btn[18].heading}}</h4>
+		<p>{{letter.btn[18].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 20">
+		<h4>{{letter.btn[19].heading}}</h4>
+		<p>{{letter.btn[19].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 21">
+		<h4>{{letter.btn[20].heading}}</h4>
+		<p>{{letter.btn[20].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 22">
+		<h4>{{letter.btn[21].heading}}</h4>
+		<p>{{letter.btn[21].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 23">
+		<h4>{{letter.btn[22].heading}}</h4>
+		<p>{{letter.btn[22].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 24">
+		<h4>{{letter.btn[23].heading}}</h4>
+		<p>{{letter.btn[23].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 25">
+		<h4>{{letter.btn[24].heading}}</h4>
+		<p>{{letter.btn[24].definition}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 26">
+		<h4>{{letter.btn[25].heading}}</h4>
+		<p>{{letter.btn[25].definition}}</p>
+	</div>
+		</section>
     </div>
+			</div>
       
       <footer class="footer">
       <div class="container">

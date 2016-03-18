@@ -94,6 +94,22 @@ body p {
     color:#9f8375;
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #b0a096;
+}
+
+.nav-pills>li>a {
+    color: #846048;
+    background-color: #b0a096;
+	  text-decoration: none;
+		font-size:1.5em;
+		height: 2em;
+    margin: .1em;
+	  border: 1px solid #846048;
+}
+
+
 /* EBB */
 
 .ebb ul li {
@@ -110,8 +126,6 @@ html {
     min-height: 100%;
 }
 body {
-
-/* Margin bottom by footer height */
     margin-bottom: 60px;
 }
 
@@ -124,13 +138,12 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #514f4e;
     color: #b0afab;
     font-weight:700;
     font-size:.75em;
-	text-align:center;
+	  text-align:center;
 }
 
 .footer p {
