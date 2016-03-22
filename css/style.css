@@ -22,16 +22,12 @@ body {
     color:#846048;
     font-family:'Open Sans', sans-serif;
 	padding-top:65px;
+	margin-top: 60px;
 }
 
 body p {
     margin-top: 20px;
 }
-
-.video {
-	margin-left:40%;
-    margin-top: 70px;
-	}
 
 
 .col-centered{
@@ -39,13 +35,12 @@ body p {
     margin: 0 auto;
 }
 
-.topSpace {
-	margin-top: 100px;
-}
+
 /* Carousel */
 
 .item {
     align-content: center;
+	  max-height: 600px;
 }
 
 /* ---- Gallery ---- */
@@ -106,7 +101,7 @@ body p {
 		font-size:1.5em;
 		height: 2em;
     margin: .1em;
-	  border: 1px solid #846048;
+	  border: 2px solid #846048;
 }
 
 
@@ -119,6 +114,25 @@ body p {
 	margin: 2px;
 }
 
+.ebb div h1 {
+	text-align: center;
+}
+
+.ebb ul li button {
+	    color: #fff;
+    background-color: #b0a096;
+	  text-decoration: none;
+		font-size:1.5em;
+		height: 2em;
+    margin: .1em;
+	  border: 2px solid #846048;
+	  border-radius: 10%;
+}
+
+.ebbdiv {
+	margin: 20px;
+	border: 2px dotted #846048;
+}
 /* Sticky footer */
 
 html {
